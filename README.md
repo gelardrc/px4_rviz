@@ -20,7 +20,7 @@ Dependencies:
 
 > roslaunch px4_rviz example.launch
 *You should see rviz like this :*
-
+![](https://github.com/gelardrc/px4_rviz/blob/main/img/rviz.png)
 # To do list
 
 * [ ] Improve path representation ( working ).
