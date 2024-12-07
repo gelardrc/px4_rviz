@@ -1,0 +1,10 @@
+<launch>
+    <!--Spawn a gazebo -->
+    <include file="$(find px4_rviz)/launch/includes/example_world.launch" />
+    <!--Spawn px4-->
+    <include file="$(find px4_rviz)/launch/includes/example_px4.launch"/>
+    <!--Spawn Rviz-->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find robots_alarms)/rviz/example.rviz" />
+    <!--run px4_rviz script args= robot_id -->
+    <node name="px4_rviz" pkg="px4_rviz" type="px4_rviz.py" args="1"/>
+</launch>
